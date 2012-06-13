@@ -12,9 +12,9 @@ PKG_VERSION:=0.05
 PKG_RELEASE:=$(PKG_SOURCE_VERSION)
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_URL:=git://github.com/albertz/shairport.git
+PKG_SOURCE_URL:=git://github.com/ChristianUlbrich/shairport.git
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
-PKG_SOURCE_VERSION:=8435f6af7bd83a66a86a660475cd881b24952fc7
+PKG_SOURCE_VERSION:=781456bc3727073a0799d4a31472683b6ce44daf
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_SOURCE_VERSION).tar.gz
 
 PKG_BUILD_PARALLEL:=1
@@ -32,7 +32,7 @@ endef
 
 define Package/shairport
   $(Package/shairport/Default)
-  DEPENDS:= +libopenssl +libao +avahi-daemon-dbus +avahi-utils
+  DEPENDS:= +libopenssl +libao +avahi-utils
 endef
 
 define Package/shairport/description
